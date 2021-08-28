@@ -149,7 +149,7 @@ if copt_msvc
 		'/GS',
 		'-D_SCL_SECURE_NO_WARNINGS',
 	]
-	args_msvc += ['/arch:avx2']
+	args_msvc += ['/arch:AVX2']
 	if get_option('debug')
 		project_link_args += [
 			'/NODEFAULTLIB:MSVCRT',
