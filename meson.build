@@ -152,11 +152,7 @@ if copt_msvc
 	if copt_64bit
 		message('SSE explicitly configured but unavailable in msvc targeting 64-bit machines')
 	else
-		if uopt_x86_sse_level >= 20
-			args_msvc += [ '/arch:SSE2' ]
-		elif uopt_x86_sse_level >= 10
-			args_msvc += [ '/arch:SSE' ]
-		endif
+		args_msvc += ['/arch:avx2']
 	endif
 	if get_option('debug')
 		project_link_args += [
