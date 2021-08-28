@@ -149,11 +149,7 @@ if copt_msvc
 		'/GS',
 		'-D_SCL_SECURE_NO_WARNINGS',
 	]
-	if copt_64bit
-		message('SSE explicitly configured but unavailable in msvc targeting 64-bit machines')
-	else
-		args_msvc += ['/arch:avx2']
-	endif
+	args_msvc += ['/arch:avx2']
 	if get_option('debug')
 		project_link_args += [
 			'/NODEFAULTLIB:MSVCRT',
