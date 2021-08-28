@@ -58,22 +58,10 @@ jobs:
 #########################################################
 ############# BEGIN BLOCK FOR COPYING BELOW #############
 #########################################################
-        platform_short: [lin, mac, win]
-        toolset_short: [gcc, msvc, mingw]
-        machine_short: [x86_64, i686]
-        static_dynamic: [static, dynamic]
-        exclude:
-          - toolset_short: mingw
-          - machine_short: i686
-            platform_short: lin
-          - machine_short: i686
-            platform_short: mac
-          - toolset_short: msvc
-            platform_short: lin
-          - toolset_short: msvc
-            platform_short: mac
-          - toolset_short: gcc
-            platform_short: win
+        platform_short: [win]
+        toolset_short: [msvc]
+        machine_short: [x86_64]
+        static_dynamic: [static]
 #########################################################
 ############## END BLOCK FOR COPYING BELOW ##############
 #########################################################
