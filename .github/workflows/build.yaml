@@ -66,12 +66,6 @@ jobs:
 ############## END BLOCK FOR COPYING BELOW ##############
 #########################################################
         include:
-          - platform_short: lin
-            os: ubuntu-18.04
-            suffix: ''
-          - platform_short: mac
-            os: macos-latest
-            suffix: ''
           - platform_short: win
             os: windows-latest
             suffix: '.exe'
